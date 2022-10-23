@@ -10,25 +10,31 @@ namespace Lesson_28
 
             void MathMethod()
             {
-                float a = 5.5f;
-                var a1 = Math.Ceiling(a); //Округление в большую сторону
-                var a2 = Math.Round(a); //Округление в меньшую сторону
-                Console.WriteLine("Ceiling" + a1);
-                Console.WriteLine("Round" + a2);
+                float a = 5.6f;
+                var a1 = Math.Ceiling(a); //Округление в большую сторону 
+                var a2 = Math.Round(a); //Округление до ближайшего целого числа
+                var a3 = Math.Floor(a); ///Округление в меньшую сторону 
+                Console.WriteLine("Ceiling " + a1);
+                Console.WriteLine("Round " + a2);
+                Console.WriteLine("Floor " + a3);
 
                 var b = Convert.ToInt32(Console.ReadLine());
                 float b1 = 12;
                 float b2 = Math.Max(b, b1);
                 float b3 = Math.Min(b, b1);
-                Console.WriteLine("Max" + b2);
-                Console.WriteLine("Min" + b3);
+                float b4 = Math.Abs(b); //Модуль от числа
+                Console.WriteLine("Max " + b2);
+                Console.WriteLine("Min " + b3);
+                Console.WriteLine("Abs " + b4);
 
                 float c1 = 12;
                 float c2 = 2;
                 var c3 = Math.Pow(c1, c2); //Возведение в степень
                 var c4 = Math.Sqrt(c1); // Возврат значения из корня
-                Console.WriteLine("Pow" + c3);
-                Console.WriteLine("Sqrt" + c4);
+                float c5 = Math.Clamp(c1, 4, 6); //Округление до интервала 4 - 6
+                Console.WriteLine("Pow " + c3);
+                Console.WriteLine("Sqrt " + c4);
+                Console.WriteLine("Clamp " + c5);
 
                 float d = 7;
                 float d1 = 12;
